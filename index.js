@@ -31,7 +31,7 @@ const PRIVATE_APP_ACCESS = 'pat-na1-f74d878a-32e3-4432-b344-38f9df643bcc';
 
 });
 // TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
-app.get("/update-cobj") {
+app.get("/update-cobj") => {
 // * Code for Route 2 goes here
 <form method="GET" action="https://app.hubspot.com/contacts/44808993/objects/2-22162480/views/all/list">
    <input type="submit" value="Submit">
