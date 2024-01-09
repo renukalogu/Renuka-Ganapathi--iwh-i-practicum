@@ -11,11 +11,11 @@ app.use(express.json());
 const PRIVATE_APP_ACCESS = 'pat-na1-f74d878a-32e3-4432-b344-38f9df643bcc';
 
 // TODO: ROUTE 1 - Create a new app.get route for the homepage to call your custom object data. Pass this data along to the front-end and create a new pug template in the views folder.
-//app.get("/") {
+app.get("/") {
 // * Code for Route 1 goes here
- app.get('/contacts', async (req, res) => {
+// app.get('/contacts', async (req, res) => {
 
-    const contacts = 'https://api.hubspot.com/crm/v3/objects/contacts';
+    const contacts = 'https://app.hubspot.com/contacts/44808993/objects/2-22162480/views/all/list';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ const PRIVATE_APP_ACCESS = 'pat-na1-f74d878a-32e3-4432-b344-38f9df643bcc';
 
 });
 // TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
-app.get("/update-cobj")
+app.get("/update-cobj") {
 // * Code for Route 2 goes here
 <form method="GET" action="https://app.hubspot.com/contacts/44808993/objects/2-22162480/views/all/list">
    <input type="submit" value="Submit">
@@ -49,6 +49,7 @@ app.post("/update-cobj")
   <input type="submit" value="Create Record">
 </form>
 <meta http-equiv="refresh" content="5; url=https://app.hubspot.com/contacts/44808993/objects/2-22162480/views/all/list>
+}
 /** 
 * * This is sample code to give you a reference for how you should structure your calls. 
 
