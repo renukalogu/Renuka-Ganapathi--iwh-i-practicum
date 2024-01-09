@@ -13,7 +13,7 @@ const PRIVATE_APP_ACCESS = 'pat-na1-f74d878a-32e3-4432-b344-38f9df643bcc';
 // TODO: ROUTE 1 - Create a new app.get route for the homepage to call your custom object data. Pass this data along to the front-end and create a new pug template in the views folder.
 //app.get("/") {
 // * Code for Route 1 goes here
- app.get('/contacts', async (req, res) => {
+ app.get('/', async (req, res) => {
 
     const contacts = 'https://app.hubspot.com/contacts/44808993/objects/2-22162480/views/all/list';
     const headers = {
