@@ -15,7 +15,7 @@ const PRIVATE_APP_ACCESS = 'pat-na1-f74d878a-32e3-4432-b344-38f9df643bcc';
 // * Code for Route 1 goes here
  app.get('/contacts', async (req, res) => {
 
-    const contacts = 'https://app.hubspot.com/contacts/44808993/objects/2-22162480/views/all/list';
+    const contacts = 'https://api.hubspot.com/crm/v3/objects/contacts';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
