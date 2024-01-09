@@ -31,13 +31,13 @@ app.get("/") {
 
 });
 // TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
-app.get("/update-cobj") {
+//app.get("/update-cobj") {
 // * Code for Route 2 goes here
 <form method="GET" action="https://app.hubspot.com/contacts/44808993/objects/2-22162480/views/all/list">
    <input type="submit" value="Submit">
 </form>
 // TODO: ROUTE 3 - Create a new app.post route for the custom objects form to create or update your custom object data. Once executed, redirect the user to the homepage.
-app.post("/update-cobj")
+app.post("/update-cobj"){
 // * Code for Route 3 goes here
     <form id="customer-form" method="post">
   <label for="customer-name">Customer Name:</label>
